@@ -1,13 +1,155 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>P�gina Pessoal</title>
-	</head>
-	
-	<body>
-		<h1>Oi, essa � a minha p�gina ;)</h1>
-		<p>#FogueteN�oTemR</p>
-		<p>#QueroSerEJECT</p>
-	</body>
-</html>
+    <html>
+    <head>
+        <meta name="description" content="Michelle Cordeiro - Site Pessoal">
+        <meta name="keywords" content="Michelle Cordeiro, Site Pessoal, Trainee EJECT">
+        <title>Michelle Cordeiro - Site Pessoal</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body id="page-top" class="index">
+        <header>
+            <div class="container" id="maincontent" tabindex="-1">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="Imagens/fred.png" alt>
+                        <div class="intro-text">
+                            <h1 class="name">Michelle Cordeiro</h1>
+                            <br>
+                            <span class="futuro">Futura Trainee na Empresa Júnior da Escola de Ciências e Tecnologia - EJECT</span>
+                            <div>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.facebook.com/people/Michelle-Cordeiro/100008316962869" class="btn-social btn-outline">
+                                             <span class="sr-only">Facebook</span>
+                                        <i class="fa fa-fw fa-facebook">
+                                        </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www.linkedin.com/in/michelle-cordeiro" class="btn-social btn-outline"> <span class="sr-only">Linked In</span>
+                                        <i class="fa fa-fw fa-linkedin">
+                                        </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:mic321@gmail.com?subject=Contato" class="btn-social btn-outline"> <span class="sr-only">Gmail</span>
+                                            <i class="fa fa-fw fa-gmail">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="sobremim" id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Quem sou eu</h2>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p id="p-sobremim">
+                           "Bacharel em estatística (UFRN), especialista em Big Data(Instituto Metrópole Digital - IMD/ UFRN) e atualmente cursando o Bacharelado em Ciência e Tecnologia com ênfase em tecnologia da computação da UFRN."
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p id="p-sobremim">
+                            "Assessora de projetos no ESF e co-fundadora do R-Ladies Natal."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="maissobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Mais informações sobre mim</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-inline maissobre-social-buttons">
+                            <li>
+                                <a href="https://github.com/MichelleCordeiro/MichelleCordeiro.github.io" class="btn btn-default btn-lg">
+                                    <i class="fa fa-fw fa-github">
+
+                                    </i>
+                                <span class="netwoork-name">Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.linkedin.com/in/michelle-cordeiro"  class="btn btn-default btn-lg">
+                                    <i class="fa fa-fw fa-linkedin">
+
+                                    </i>
+                                    <span class="netwoork-name">Linked In</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Contato</h2>
+                        <h3 class="section-subheading text-muted"> Envie um email</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <form action="mailto:mic321@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+                            <input type="hidden" name="_next" value="#">
+                            <input type="hidden" name="_subject" value="Novo Email do site">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Seu nome *" name="name" id="name" required data-validation-required-message="Por favor, informe seu nome.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Seu email *" name="email" id="email" required data-validation-required-message="Por favor, informe seu email.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Seu Telefone" id="phone">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Sua Messagem  *" name="message"
+                                           id="message" required data-validation-required-message="Envie sua mensagem."></textarea>
+                                            <p class="help-block text-danger"></p>
+                                    </div>
+                                    </div>
+                                    <div class="clear-fix">
+                                        <br>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <div id="success"></div>
+                                            <input type="submit" class="btn btn-xl" name="send" value="Enviar">
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    </html>
